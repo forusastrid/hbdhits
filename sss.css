@@ -22,7 +22,7 @@ body {
 .credit-list {
     display: flex;
     flex-direction: column;
-    animation: scroll 120s linear infinite; /* 애니메이션 속도 조절 (40초로 변경) */
+    animation: scroll 150s linear infinite; /* 애니메이션 속도 조절 (40초로 변경) */
     text-align: center; /* 중앙 정렬 */
 }
 
