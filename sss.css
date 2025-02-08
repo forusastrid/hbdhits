@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black; /* 배경 색상 */
+    color: white; /* 글자 색상 */
+    font-family: 'Arial', sans-serif;
+}
+
+.credit-scroll {
+    height: 100vh; /* 전체 높이 */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-list {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 120s linear infinite; /* 애니메이션 속도 조절 (40초로 변경) */
+    text-align: center; /* 중앙 정렬 */
+}
+
+.credit-title {
+    font-size: 2.5em; /* 제목 크기 */
+    margin: 20px 0;
+}
+
+.credit-item {
+    font-size: 2em; /* 아이템 크기 */
+    margin: 10px 0; /* 아이템 간격 */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+footer {
+    margin-top: auto; /* 하단 고정 */
+    font-size: 1.2em;
+    color: #777;
+}
